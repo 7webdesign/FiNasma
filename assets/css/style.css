@@ -139,8 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 #header .header-container {
-  background: rgb(82, 102, 158, 0.6);
-  /* rgb(246, 247, 248) */
+  background: linear-gradient(340deg, rgba(48, 108, 219, 0.4) 33%, rgba(27, 67, 153, 0.4) 98%) !important;
   padding: 20px 20px;
   border-radius: 1px;
 }
@@ -201,10 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu > ul > li i {
-  /* position: relative;
-  white-space: nowrap; */
   padding-left: 10  px;
-  /* float: left; */
 }
 
 .nav-menu a {
@@ -438,38 +434,50 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  position: relative !important;
   height: 100vh;
   width: 100%;
-  position: relative;
- 
-  
+  overflow: hidden !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   border-left: 17px solid rgb(172, 199, 235, 0.3) !important;
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
 }
 
-
-
-
-#hero .container {
-  padding-top: 72px;
-  
-  
-}
 #herotext {
+  padding-top: 10px !important;
   opacity: 1 !important;
   z-index: 7 !important;
+  margin-left: 40%;
+ flex-grow: 2 !important;
+}
+
+#hero img {
+  position: absolute !important;
+  object-fit: contain !important;
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  position: relative !important;
+  width: 100% !important;
+  margin: auto;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   color: rgba(0, 0, 0, 0.788);
-  
+  z-index: 1 !important;
+}
+
+#h1hero {
+  z-index: 10 !important;
+  opacity: 2 !important; 
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 #hero h2 {
+  
   color:rgba(0, 0, 0, 0.596);
   margin-bottom: 50px;
   font-size: 24px;
@@ -482,7 +490,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px !important;
-  
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
@@ -490,11 +497,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  /* background: #3b508a; */
   background: rgb(82, 102, 158, 0.7);
 }
 
-
+#heroimg {
+  width: 50%;
+}
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -502,7 +510,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #hero {
-   
     height: 100vh;
     text-align: center;
   }
@@ -570,9 +577,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* BUTTON */
-
-
-
 #b-for-contact-header a {
   position: relative;
   display: inline-block;
@@ -580,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
-  background: rgb(82, 102, 158, 0.6);
+  background: linear-gradient(340deg, rgba(48, 108, 219, 0.8) 33%, rgba(27, 67, 153, 0.8) 98%) !important;
   border: #f5eeea solid 0.1px !important;
   letter-spacing: 1px;
   font-size: 16px;
@@ -673,23 +677,154 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.5s;
   transition-delay: 0.5s;
 }
-
-
 /* END BUTTON */
-/* svg2 */
+
+
+/* PNG PEN BOOK BACKGROUND */
+ #office1 {
+    position: absolute;
+    opacity: 1;
+    transform: translate(20px, -6px);
+    top: 70%;
+    left: 130px;
+    z-index: 1;
+    -webkit-filter: grayscale(100);
+  filter: grayscale(100);
+}
+#office1:after, #office1 :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#office2 {
+    position: absolute;
+    opacity: 1;
+    transform: translate(20px, -6px);
+    top: -18%;
+    right: -5%;
+    z-index: 1;
+}
+#office2:after, #office1 :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#office3 {
+  position: absolute;
+  opacity: 1;
+  transform: translate(20px, -6px);
+  top: 67%;
+  left: 3%;
+  z-index: 1;
+}
+
+#office3:after, #office1 :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#office4 {
+  position: absolute;
+  opacity: 1;
+  transform: translate(20px, -6px);
+  top: 70%;
+  left: 33%;
+}
+#office4:after, #office1 :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#office5 {
+  position: absolute;
+  opacity: 1;
+  transform: translate(20px, -6px) !important;
+  top: 70%;
+  left: 32%;
+  z-index: 11;
+    color: rgb(255, 255, 255);
+    width: 42px;
+    height: 84px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    transform-origin: 50% 50%;
+    transform: rotate(310deg) !important;
+    visibility: visible;
+  
+}
+#office5:after, #office1 :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#office6 {
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+  transform: translate(20px, -6px);
+  top: 50%;
+  left: -18%;
+}
+#office6:after, #office1 :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#office7 {
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+  transform: translate(20px, -6px);
+  top: 40%;
+  right: 8%;
+}
+#office7:after, #office1 :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#office8 {
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+  transform: translate(20px, -6px);
+  top: 48%;
+  right: -2%;
+}
+#office8:after, #office1 :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+} 
+/* END PNG PEN BOOK BACKGROUND */
+
+/* Line Shape */
+
+#line-shape {
+   position: absolute;
+   display: inline-block;
+   animation-duration: 35s;
+   animation-name: horizontal;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+   
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/   
 section {
   padding: 60px 0;
   overflow: hidden;
+
 }
 
 
 
 .section-bg {
-  /* background-color: #f3f5fa; */
-  background-color: rgb(172, 199, 235, 0.3);
+  
+  background: #e6eef9 !important;
 }
 
 .section-title {
@@ -731,7 +866,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  padding: 0 350px;
+  padding: 0 20%;
   text-align: center;
   color: rgba(12, 46, 97, 0.753);
 }
@@ -968,7 +1103,7 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  background: rgb(82, 102, 158, 0.6);
+  background: linear-gradient(340deg, rgba(48, 108, 219, 0.8) 33%, rgba(27, 67, 153, 0.8) 98%) !important;
   letter-spacing: 2px;
   font-size: 16px;
   transition: 0.5s;
@@ -1151,7 +1286,7 @@ margin-left: -20%;
   position: flex;
   /* margin-right: -50%; */
 margin-left: -20%;
-  margin-bottom: -12%;
+  margin-bottom: -18%;
   
 }
 }
@@ -2054,7 +2189,8 @@ margin-left: -20%;
 }
 
 #newsletter1 {
-  background-color: rgb(230, 238, 249) !important;
+  background-color: rgb(55, 81, 126) !important;
+  /* rgb(230, 238, 249) !important; */
 }
 
 #footer .footer-newsletter {
@@ -2062,7 +2198,7 @@ margin-left: -20%;
   background: #f3f5fa;
   text-align: center;
   font-size: 15px;
-  color: #444444;
+  color: #ffffff;
 }
 
 #footer .footer-newsletter h4 {
@@ -2071,7 +2207,7 @@ margin-left: -20%;
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: #ffffff;
 }
 
 #footer .footer-newsletter form {
@@ -2099,8 +2235,8 @@ margin-left: -20%;
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #52669e;
-  color: #fff;
+  background: rgb(60, 103, 190);
+  color: rgb(245, 241, 241);
   transition: 0.3s;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -2239,7 +2375,7 @@ margin-left: -20%;
 }
 
 #p-newsletter {
-  color:#425e87;
+  background: 486288 !important;
 }
 /* ////////  Extra */
 #spanText {
