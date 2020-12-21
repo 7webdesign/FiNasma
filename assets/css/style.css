@@ -130,17 +130,17 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 
-#header {
+ #header {
   transition: all 0.5s;
   z-index: 997;
-  /* padding: 35px 40; */
+  padding: 35px 40;
   transition: all 0.5s;
-  top: 20px;
+  position: absolute;
   
-}
+  
+} 
 #header .header-container {
   background: linear-gradient(340deg, rgba(48, 108, 219, 0.5) 33%, rgba(27, 67, 153, 0.5) 98%) !important;
- 
   padding: 20px 20px;
   border-radius: 1px;
 }
@@ -189,14 +189,11 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-/* .nav-menu > ul {
-  display: flex;
-} */
+
 
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-  
   float: left;
 }
 
@@ -447,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 10px !important;
   opacity: 1 !important;
   z-index: 7 !important;
-  margin-left: 40%;
+  margin-left: 70%;
  
 }
 
@@ -464,7 +461,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: rgba(0, 0, 0, 0.788);
-  
+}
+
+.layer {
+  font-size: 80px !important;
+}
+
+.layer-h2 {
+  padding-top: 50px;
+  font-size: 40px !important;
 }
 
 #h1hero {
@@ -472,7 +477,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 2 !important; 
   position: relative !important;
   z-index: 5 !important;
-  margin-top: 40px;
+  margin-top: 60px;
+  left: 30%;
 }
 
 #hero h2 {
@@ -750,8 +756,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   opacity: 1;
   transform: translate(20px, -6px);
-  top: 70%;
-  left: 33%;
+  top: 65%;
+  left: 23%;
   z-index: 1;
 }
 
@@ -766,8 +772,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   opacity: 1;
   transform: translate(20px, -6px);
-  top: 70%;
-  left: 32%;
+  top: 60%;
+  left: 22%;
   z-index: 1;
     color: rgb(255, 255, 255);
     width: 42px;
@@ -1764,6 +1770,10 @@ margin-left: -20%;
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+#pricing {
+  background-color: #e6eef9;
+}
+
 .pricing .row {
   padding-top: 40px;
 }
@@ -1813,6 +1823,7 @@ margin-left: -20%;
 .pricing ul li {
   padding: 10px 0 10px 30px;
   position: relative;
+  color: rgb(31, 29, 29);
 }
 
 .pricing ul i {
@@ -1890,8 +1901,14 @@ margin-left: -20%;
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+#faq {
+  background-color: white !important;
+}
+
 .faq .faq-list {
   padding: 0 100px;
+  background-color: #e6eef9;
+  padding: 50px;
 }
 
 .faq .faq-list ul {
