@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   
 } 
 #header .header-container {
-  background: linear-gradient(340deg, rgba(48, 108, 219, 0.5) 33%, rgba(27, 67, 153, 0.5) 98%) !important;
+  background: linear-gradient(340deg, rgba(48, 108, 219, 0.8) 33%, rgba(27, 67, 153, 0.8) 98%) !important;
   padding: 20px 20px;
   border-radius: 1px;
 }
@@ -460,7 +460,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: rgba(0, 0, 0, 0.788);
+  color: #37517e;
 }
 
 .layer {
@@ -470,20 +470,22 @@ h1, h2, h3, h4, h5, h6 {
 .layer-h2 {
   padding-top: 50px;
   font-size: 30px !important;
+  color: #425e87 !important;
 }
 
 .layer-h2-span {
   font-weight: bold;
-  color: #363636;
+  color: #37517e;
   font-size: 35px;
 }
 
 .layer-p {
   margin-top: -40px;
   font-family: "Open Sans", sans-serif;
-  color: #676767;
+  color: #425e87;
   margin-bottom: 40px;
   font-weight: 400;
+
 }
 
 #h1hero {
@@ -1050,6 +1052,7 @@ section {
   font-weight: 400;
   font-size: 34px;
   color: #37517e;
+  margin-bottom: 40px;
 }
 
 .why-us .content h4 {
@@ -1965,6 +1968,10 @@ margin-left: -20%;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.faq-p__span {
+  font-weight: 600;
 }
 
 .faq .faq-list p {
